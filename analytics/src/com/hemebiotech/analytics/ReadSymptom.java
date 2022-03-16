@@ -18,13 +18,12 @@ public class ReadSymptom {
 	        = "symptoms.txt";
 	    
 	    
-		public static void main(String[] args) throws IOException {
+		public static void iterateUsingEntrySet(Map<Integer, Symptoms> map) throws IOException {
 			
-		 // read text file to HashMap
-			Map<Integer, Symptoms> mapFromFile = HashMapFromFile();
+
 	        // iterate over HashMap entries
 	        for (Map.Entry<Integer, Symptoms> entry :
-	             mapFromFile.entrySet()) {
+	             map.entrySet()) {
 	            System.out.println(entry.getKey() + " : "
 	                               + entry.getValue());
 	        }
@@ -47,9 +46,12 @@ public class ReadSymptom {
 	  
 	            // read file line by line
 	            while ((br.readLine()) != null) {
-	  
-	  
-	            }
+
+	                String line = null;
+					// split the line by :
+	                String[] parts = line.split(":");
+	                
+           }
 	        }
 	        catch (Exception e) {
 	            e.printStackTrace();

@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -16,9 +17,6 @@ public class SymptomLIst {
 		
 		// Java program to reading
 		// text file to TreeMap
-	private static Map<? extends String, ? extends Integer> extracted(String name, int frequency) {
-		return (Map<? extends String, ? extends Integer>) new Symptoms(name, frequency);
-	}
 
 	
 		public static void main(String args[]) throws NumberFormatException, IOException {
@@ -35,12 +33,10 @@ public class SymptomLIst {
 	    		while ((reader.readLine())!= null) {
 	        		String  line = reader.readLine();
 
-	        	    String[] nameCol = line.split("");
+	        	    String[] nameCol = ((String) line).split("");
 
 	    			
-	   			 String name = nameCol[1];
-	   			 int frequency = Integer.valueOf(nameCol[0]);
-	   			 symptomList.putAll(extracted(name, frequency));
+	   			 symptomList.put(line, null);
 
 	    	        for(Map.Entry<String,Integer> entry: symptoms) {
 

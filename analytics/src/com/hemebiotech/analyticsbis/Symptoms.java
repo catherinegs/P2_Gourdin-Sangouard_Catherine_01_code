@@ -10,6 +10,14 @@ public class Symptoms {
 		this.frequency=frequency;
 		
 	}
+	
+
+	@Override
+	public String toString() {
+		return "Symptoms [name=" + name + ", frequency=" + frequency + "]";
+	}
+
+
 
 	public String getName() {
 		return name;

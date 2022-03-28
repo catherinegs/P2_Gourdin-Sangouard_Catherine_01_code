@@ -1,0 +1,23 @@
+Frequency of anxiety is 5
+Frequency of arrhythmias is 3
+Frequency of blindness is 1
+Frequency of blurred vision is 5
+Frequency of constricted pupils is 3
+Frequency of cough is 6
+Frequency of dialated pupils is 4
+Frequency of dizziness is 5
+Frequency of dry mouth is 8
+Frequency of fever is 7
+Frequency of headache is 3
+Frequency of high blood pressure is 10
+Frequency of inflamation is 7
+Frequency of insomnia is 4
+Frequency of low blood pressure is 4
+Frequency of nausea is 5
+Frequency of rapid heart rate is 1
+Frequency of rash is 4
+Frequency of shortness of breath is 3
+Frequency of stiff neck is 4
+Frequency of stomach pain is 3
+Frequency of tremor is 4
+Frequency of water retention is 1

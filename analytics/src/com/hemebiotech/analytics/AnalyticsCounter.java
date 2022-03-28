@@ -9,7 +9,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class AnalyticsCounter {
-	
+	/**
+	 * to count occurrences of elements of ArrayList 
+	 *
+	 */	
     public static void countFrequencies(ArrayList<String> result) throws IOException
     {
         // Save original out stream.
@@ -20,7 +23,9 @@ public class AnalyticsCounter {
         
         // Redirect standard out to file.
         System.setOut(fileOut);
-
+        
+        // TreeMap is created and elements of 
+        // arraylist are inserted into it
         TreeMap<String, Integer> tmap = new TreeMap<String, Integer>();
         
         for (String t : result) {
@@ -30,7 +35,7 @@ public class AnalyticsCounter {
         }
 
         for (Map.Entry m : tmap.entrySet())
-            // If user input a valid email then write the email to ./out.txt and console.
+            // send frequency of symptoms to file result.out and console.
             System.out.println("Frequency of " + m.getKey() + " is " + m.getValue());
         for (Map.Entry m : tmap.entrySet())
         originalOut.println("Frequency of " + m.getKey() + " is " + m.getValue());
@@ -44,6 +49,7 @@ public class AnalyticsCounter {
 		
 		try {
 			BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt"));
+            // Read string line.
 			String line = reader.readLine();
 			
 			while (line != null) {

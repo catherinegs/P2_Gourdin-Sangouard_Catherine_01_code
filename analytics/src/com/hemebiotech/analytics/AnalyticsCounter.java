@@ -16,7 +16,7 @@ public class AnalyticsCounter {
         PrintStream originalOut = System.out;
 
         // Create a new file output stream.
-        PrintStream fileOut = new PrintStream("resultcorrect.out");
+        PrintStream fileOut = new PrintStream("result.out");
         
         // Redirect standard out to file.
         System.setOut(fileOut);

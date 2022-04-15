@@ -13,7 +13,7 @@ public class AnalyticsCounter implements IAnalyticsCounter {
 	 * to count occurrences of elements of ArrayList 
 	 *
 	 */	
-	
+	   @Override	
 	   public void countSymptoms(List<String> result) throws IOException
 	    {
 	        // Save original out stream.

@@ -102,3 +102,5 @@ amnesia
 liver problem
 high blood pressure
 cough
+anxiety
+mal de dos

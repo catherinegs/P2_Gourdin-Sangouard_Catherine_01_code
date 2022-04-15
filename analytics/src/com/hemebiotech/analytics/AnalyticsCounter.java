@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 
-public class AnalyticsCounter {
+public class AnalyticsCounter implements IAnalyticsCounter {
 	/**
 	 * to count occurrences of elements of ArrayList 
 	 *

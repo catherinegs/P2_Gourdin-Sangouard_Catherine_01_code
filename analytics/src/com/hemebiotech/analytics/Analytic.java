@@ -1,7 +1,7 @@
 package com.hemebiotech.analytics;
 
 
-import java.util.List;
+import java.util.TreeMap;
 
 
 public class Analytic {
@@ -12,17 +12,18 @@ public class Analytic {
 	
 	public static void main(String args[]) throws Exception {
 		
-		String filepath= "symptoms.txt";
-		
-		ReadSymptomDataFromFile symptomFile = new ReadSymptomDataFromFile(filepath);
-		
-		List<String> names = symptomFile.getSymptoms();
-		
-		AnalyticsCounter nameList = new AnalyticsCounter();
-		
-		nameList.countSymptoms(names);
-			    
-	 }	
+		String filePath= "symptoms.txt";
+				
+		AnalyticsCounter analyticsCounter = new AnalyticsCounter(filePath);
+				
+	
+		TreeMap<String, Integer> map = analyticsCounter.countSymptoms();
 
-}
+
+		analyticsCounter.saveFile(map);
+ 
+		
+			    
+	 }
+}	
 

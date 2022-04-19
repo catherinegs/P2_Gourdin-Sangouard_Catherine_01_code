@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.TreeMap;
 
 /**
- * Anything that will count symptoms frequencies from the reader
- * The important part is, the result from the operation, which is a map of keys (strings) and values (integer),
- * with unique key in ascending order
+ * Anything that will count symptoms frequencies from the reader The important
+ * part is, the result from the operation, which is a map of keys (strings) and
+ * values (integer), with unique key in ascending order
  * 
  * The implementation needs to order the collection
  * 
@@ -20,14 +20,17 @@ public interface IAnalyticsCounter {
 	/**
 	 * key can not to be null, return an error
 	 * 
-	 * result is a object listing of all symptoms and their frequencies obtained from a data source, each key (or symptom name) are unique
-	 * @return 
+	 * result is a object listing of all symptoms and their frequencies obtained
+	 * from a data source, each key (or symptom name) are unique
+	 * 
+	 * @return
 	 */
-		
-	TreeMap<String, Integer> countSymptoms() throws IOException;	
+
+	TreeMap<String, Integer> countSymptoms() throws IOException;
+
 	/**
-	 * save result of the TreeMap in txt file and print it in the console 
-	 */	
+	 * save result of the TreeMap in txt file and print it in the console
+	 */
 	void saveFile(TreeMap<String, Integer> map) throws FileNotFoundException;
 
 }

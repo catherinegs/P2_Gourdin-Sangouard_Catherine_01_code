@@ -24,8 +24,10 @@ public interface IAnalyticsCounter {
 	 * @return 
 	 */
 		
-	TreeMap<String, Integer> countSymptoms() throws IOException;
+	TreeMap<String, Integer> countSymptoms() throws IOException;	
+	/**
+	 * save result of the TreeMap in txt file and print it in the console 
+	 */	
 	void saveFile(TreeMap<String, Integer> map) throws FileNotFoundException;
-
 
 }

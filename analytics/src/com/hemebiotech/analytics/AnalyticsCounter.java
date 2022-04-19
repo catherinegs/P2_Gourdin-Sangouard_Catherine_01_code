@@ -26,7 +26,7 @@ public class AnalyticsCounter implements IAnalyticsCounter {
 	 */	
 	   @Override	
 	   public TreeMap<String, Integer>  countSymptoms() throws IOException
-	    {
+	   {
 			ReadSymptomDataFromFile symptomFile = new ReadSymptomDataFromFile(filePath); 
 			
 			List<String> symptoms = symptomFile.getSymptoms();
@@ -42,7 +42,10 @@ public class AnalyticsCounter implements IAnalyticsCounter {
 	        return tmap;
 	    }
 	   
-	   public void saveFile(TreeMap<String, Integer> map) throws FileNotFoundException { 
+		/**
+		 * to save and print result in txt file and the console 
+		 */		   	   
+	    public void saveFile(TreeMap<String, Integer> map) throws FileNotFoundException { 
 	        
 	        // Save original out stream.
 	        PrintStream originalOut = System.out;
